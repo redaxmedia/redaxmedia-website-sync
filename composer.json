@@ -1,0 +1,34 @@
+{
+	"name": "redaxmedia/redaxmedia-website-sync",
+	"description": "Yet another cronjob for Redaxmedia's website",
+	"version": "3.0.0",
+	"homepage": "http://redaxmedia.com",
+	"license": "GPL-3.0",
+	"repositories":
+	[
+		{
+			"type": "git",
+			"url": "https://github.com/redaxmedia/redaxmedia-template.git"
+		}
+	],
+	"require":
+	{
+		"php": ">5.4"
+	},
+	"require-dev":
+	{
+		"redaxmedia/redaxmedia-template": "dev-master",
+		"redaxmedia/redaxscript": "dev-master"
+	},
+	"scripts":
+	{
+		"post-install-cmd":
+		[
+			"cd vendor/redaxmedia/redaxscript && composer install --no-dev"
+		],
+		"post-update-cmd":
+		[
+			"@post-install-cmd"
+		]
+	}
+}
