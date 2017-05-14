@@ -24,7 +24,7 @@
 	{
 		"post-install-cmd":
 		[
-			"cd vendor/redaxmedia/redaxscript && composer install --no-dev"
+			"cd vendor/redaxmedia/redaxscript && composer install"
 		],
 		"post-update-cmd":
 		[
