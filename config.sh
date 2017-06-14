@@ -8,4 +8,3 @@ cd build
 php console.php config parse --db-url $DB_URL
 php console.php status database
 rm console.php
-mkdir files
