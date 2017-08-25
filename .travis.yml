@@ -22,7 +22,7 @@ script:
 - grunt build --gruntfile vendor/redaxmedia/redaxmedia-template/gruntfile.js
 - grunt build --gruntfile vendor/redaxmedia/redaxscript/gruntfile.js
 - grunt
-- sh config.sh
+- grunt config
 
 after_success:
 - lftp $FTP_URL -e "glob -d mirror build . --reverse --delete-first --parallel=10 && chmod 0444 config.php && exit"

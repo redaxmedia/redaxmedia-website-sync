@@ -21,4 +21,9 @@ module.exports = function (grunt)
 		'shell:removeBuild',
 		'copy'
 	]);
+	grunt.registerTask('config',
+	[
+		'shell:configDatabase',
+		'shell:configModules'
+	]);
 };
