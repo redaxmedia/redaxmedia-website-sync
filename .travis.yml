@@ -15,12 +15,12 @@ install:
 - npm install --global grunt-cli
 - IED_CACHE_DIR=.tmp ied install
 - cd vendor/redaxmedia/redaxmedia-template && IED_CACHE_DIR=.tmp ied install && cd -
-- cd vendor/redaxmedia/redaxscript && IED_CACHE_DIR=.tmp ied install && cd -
+- cd vendor/redaxscript/redaxscript && IED_CACHE_DIR=.tmp ied install && cd -
 
 script:
-- replace 'vendor/redaxmedia' '..' -- vendor/redaxmedia/redaxmedia-template/templates/redaxmedia/assets/styles/_redaxmedia.css
+- replace 'vendor/redaxscript' '..' -- vendor/redaxmedia/redaxmedia-template/templates/redaxmedia/assets/styles/_redaxmedia.css
 - grunt build --gruntfile vendor/redaxmedia/redaxmedia-template/gruntfile.js
-- grunt build --gruntfile vendor/redaxmedia/redaxscript/gruntfile.js
+- grunt build --gruntfile vendor/redaxscript/redaxscript/gruntfile.js
 - grunt
 - grunt config
 
