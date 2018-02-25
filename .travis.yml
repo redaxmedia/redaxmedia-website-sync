@@ -1,7 +1,7 @@
 language: php
 
 php:
-- 7.1
+- 7.2
 
 before_install:
 - composer global require hirak/prestissimo
@@ -10,12 +10,11 @@ install:
 - sudo apt-get install lftp fontforge
 - composer self-update
 - composer install
-- nvm install 6
-- npm install --global ied
+- nvm install 9
 - npm install --global grunt-cli
-- IED_CACHE_DIR=.tmp ied install
-- cd vendor/redaxmedia/redaxmedia-template && IED_CACHE_DIR=.tmp ied install && cd -
-- cd vendor/redaxscript/redaxscript && IED_CACHE_DIR=.tmp ied install && cd -
+- npm install
+- cd vendor/redaxmedia/redaxmedia-template && npm install && cd -
+- cd vendor/redaxscript/redaxscript && npm install && cd -
 
 script:
 - replace 'vendor/redaxscript' '../../redaxscript' -- vendor/redaxmedia/redaxmedia-template/templates/redaxmedia/assets/styles/_redaxmedia.css
