@@ -24,7 +24,7 @@ script:
 - grunt config
 
 after_success:
-- lftp $FTP_URL -e "glob -d mirror build . --reverse --delete-first --parallel=10 && chmod 0444 config.php && exit"
+- grunt deploy
 
 notifications:
  email:
