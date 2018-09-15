@@ -4,13 +4,13 @@ php:
 - 7.2
 
 before_install:
+- composer self-update
 - composer global require hirak/prestissimo
 
 install:
 - sudo apt-get install lftp fontforge
-- composer self-update
 - composer install
-- nvm install 9
+- nvm install 10
 - npm install --global grunt-cli
 - npm install
 - cd vendor/redaxmedia/redaxmedia-template && npm install && cd -
