@@ -18,7 +18,7 @@ module.exports = grunt =>
 				[
 					'mirror {SOURCE} {TARGET}-{TIMESTAMP} --reverse --delete-first --parallel=10 --use-pget-n=10',
 					'chmod 0444 {TARGET}-{TIMESTAMP}/config.php',
-					'rn -r {TARGET}',
+					'rm -r {TARGET}',
 					'mv {TARGET}-{TIMESTAMP} {TARGET}',
 					'exit'
 				]
