@@ -16,10 +16,10 @@ module.exports = grunt =>
 				url: process.env.FTP_URL,
 				command:
 				[
-					'mirror {SOURCE} {TARGET}-temp --reverse --delete-first --parallel=10 --use-pget-n=10',
-					'chmod 0444 {TARGET}-temp/config.php',
-					'rename {TARGET} {TARGET}-{TIMESTAMP}',
-					'rename {TARGET}-temp {TARGET}',
+					'mirror {SOURCE} {TARGET}-new-{TIMESTAMP} --reverse --delete-first --parallel=10 --use-pget-n=10',
+					'chmod 0444 {TARGET}-new-{TIMESTAMP}/config.php',
+					'mmv {TARGET} {TARGET}-old-{TIMESTAMP}',
+					'mmv {TARGET}-new-{TIMESTAMP} {TARGET}',
 					'exit'
 				]
 			}
