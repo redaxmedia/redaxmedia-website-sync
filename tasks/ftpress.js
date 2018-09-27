@@ -20,7 +20,7 @@ module.exports = grunt =>
 					'chmod 0444 {TARGET}-new-{TIMESTAMP}/config.php',
 					'mv {TARGET} {TARGET}-old-{TIMESTAMP}',
 					'mv {TARGET}-new-{TIMESTAMP} {TARGET}',
-					'rm -r {TARGET}-old-{TIMESTAMP}',
+					'rm -rf {TARGET}-old-{TIMESTAMP}',
 					'exit'
 				]
 			}
