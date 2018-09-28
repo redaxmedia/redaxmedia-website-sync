@@ -22,6 +22,7 @@ module.exports = () =>
 				'modules/PageCache/**',
 				'modules/SitemapXml/**',
 				'modules/TextareaResizer/**',
+				'modules/TableSorter/**',
 				'templates/admin/**',
 				'config.php',
 				'console.php',
