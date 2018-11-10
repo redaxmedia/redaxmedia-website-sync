@@ -9,7 +9,7 @@ module.exports = () =>
 			command:
 			[
 				'cd build',
-				'php console.php config parse --db-url $DB_URL',
+				'php console.php config parse --db-url $DB_URL --halt-on-error',
 				'php console.php status database'
 			]
 			.join('&&')
