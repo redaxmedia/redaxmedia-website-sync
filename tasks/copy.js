@@ -21,6 +21,7 @@ module.exports = () =>
 				'modules/FormValidator/**',
 				'modules/HtmlValidator/**',
 				'modules/PageCache/**',
+				'modules/Reporter/**',
 				'modules/SitemapXml/**',
 				'modules/TextareaResizer/**',
 				'modules/TableSorter/**',
