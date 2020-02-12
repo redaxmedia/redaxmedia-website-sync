@@ -15,6 +15,7 @@ module.exports = () =>
 				'includes/**',
 				'languages/en.json',
 				'libraries/**',
+				'modules/Ace/**',
 				'modules/AliasGenerator/**',
 				'modules/Analytics/**',
 				'modules/Dialog/**',
