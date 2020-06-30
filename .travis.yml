@@ -6,14 +6,13 @@ addons:
  apt:
   packages:
   - lftp
-  - fontforge
 
 before_install:
 - composer global require hirak/prestissimo
 
 install:
 - composer install
-- nvm install 12
+- nvm install 14
 - npm install --global grunt-cli
 - npm install
 - cd vendor/redaxmedia/redaxmedia-template && npm install && cd -
