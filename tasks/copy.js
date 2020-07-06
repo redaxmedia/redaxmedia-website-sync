@@ -11,7 +11,6 @@ module.exports = () =>
 				'assets/**',
 				'cache/**',
 				'database/**',
-				'dist/**',
 				'includes/**',
 				'languages/en.json',
 				'libraries/**',
