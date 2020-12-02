@@ -17,7 +17,6 @@ module.exports = () =>
 				'modules/CodeEditor/**',
 				'modules/ConfirmAction/**',
 				'modules/Dialog/**',
-				'modules/DirectoryLister/**',
 				'modules/FormValidator/**',
 				'modules/HtmlValidator/**',
 				'modules/PageCache/**',
