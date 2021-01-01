@@ -18,7 +18,7 @@
 	"require-dev":
 	{
 		"redaxmedia/redaxmedia-template": "dev-master",
-		"redaxscript/redaxscript": "4.4.0"
+		"redaxscript/redaxscript": "4.5.0"
 	},
 	"scripts":
 	{
