@@ -26,6 +26,7 @@ module.exports = () =>
 				'modules/TextareaResizer/**',
 				'modules/UnmaskPassword/**',
 				'templates/admin/**',
+				'templates/console/**',
 				'config.php',
 				'console.php',
 				'index.php',
